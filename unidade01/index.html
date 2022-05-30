@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Search</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="appAnimes">
+        <div class="anime-search">
+            <div class="header">
+            <h1><strong>anime</strong>app</h1>
+            </div>
+            <div class="conatiner-search">
+                <form class="form-control">
+                    <input type="text" name="search" id="input-search" >
+                    <a href="#" id="link-search" onclick="searchAnimes(event)">Pesquisar</a>
+                </form>
+            </div>
+        </div>
+        <div id="overlayNav" class="overlay">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content" id="overlay-content"></div>
+         </div>
+        <!-- <div class="search-result-type">
+            <h1>Search Results</h1>
+            <div class="category-animes">
+                <label for="select-control">Sort</label>
+                <select name="select-control" id="select-sort">
+                    <option disabled selected>Select option</option>
+                    <option value="1">A-Z</option>
+                    <option value="2">Z-A</option>
+                </select>
+            </div>
+        </div> -->
+        <div id="main" class="main"></div>
+        <div class="results-animes" id="appAnimes">
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
+
