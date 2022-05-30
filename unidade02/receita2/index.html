@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>ReceitaReact - Classes</title>
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .align {
+            text-align: center;
+            color: #171717;
+        }
+        table {
+            width: 30%;
+            border-collapse: collapse;
+            margin-left: 35%;
+        }
+        th {
+            font-weight: 400;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        th {
+            background-color: #444444;
+            color: white;
+        }
+        p {
+            font-size: 13px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">  
+        class DevRaquel extends React.Component {
+            render() {
+                return (
+                    <p>Desenvolvido por: Raquel Lima.</p>   
+                )
+            }
+        }     
+        class TabelaBebidas extends React.Component {
+            constructor(props) {
+                super(props)
+            }
+            render() {
+                return (
+                    <div class="align">
+                        <h1>{this.props.titulo}</h1>
+                        <table>
+                            <thead>
+                                <tr><th>Name</th><th>Preço (R$)</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Petra</td><td>2.30</td></tr>
+                                <tr><td>Skol</td><td>2.00</td></tr>
+                                <tr><td>Devassa</td><td>1.50</td></tr>
+                                <tr><td>Heineken</td><td>3.75</td></tr>
+                                <tr><td>Subzero</td><td>4.00</td></tr>
+                            </tbody>
+                        </table>
+                        <DevRaquel/>
+                    </div>   
+                )
+            }     
+        }
+           
+        ReactDOM.render(
+            <TabelaBebidas titulo="Tabela de Cana" />,
+            document.getElementById("app")
+        );
+        
+    </script>
+
+</body>
+</html>
