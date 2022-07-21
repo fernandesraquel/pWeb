@@ -1,10 +1,10 @@
-import {exercicio2} from './exercicio2'
+import { HomeTres } from './exeDois'
 
 export default function Home() {
     return (
         <div>
             <h1>Home</h1>
-            <exercicio2 />
+            <HomeTres/>
         </div>
     )
 }
