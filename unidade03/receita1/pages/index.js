@@ -1,10 +1,14 @@
-import { HomeTres } from './exeDois'
+import Page from './exeUm'
+import { PageDois } from './exeDois'
 
-export default function Home() {
-    return (
-        <div>
-            <h1>Home</h1>
-            <HomeTres/>
-        </div>
-    )
+function HomePage() {
+  return (
+    <div>
+      <h1>Next js</h1>
+      <Page/>
+      <PageDois/>
+    </div>
+  )
 }
+
+export default HomePage
