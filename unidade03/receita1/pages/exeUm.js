@@ -1,7 +1,3 @@
-export default function HomeDois() {
-    return (
-        <div>
-            <h1>Função exportada como default</h1>
-        </div>
-    )
+export default function Page() {
+  return <div>função exportada como default</div>
 }
